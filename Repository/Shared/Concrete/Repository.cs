@@ -21,20 +21,6 @@ namespace Repository.Shared.Concrete
             Save();
             return entity;
         }
-
-        public bool Delete(int id)
-        {
-            T entity = _dbSet.Find(id);
-            if (entity != null)
-            {
-                _dbSet.Update(entity);
-                Save();
-                return true;
-            }
-            return false;
-
-        }
-
         public IQueryable<T> GetAll()
         {
             return _dbSet;

@@ -13,7 +13,6 @@ namespace Repository.Shared.Abstract
         T Update(T entity);
         IQueryable<T> GetAll();
         IQueryable<T> GetAll(Expression<Func<T, bool>> predicate);
-        bool Delete(int id);
         bool HardDelete(int id);
         T GetById(int id);
         T GetFirstOrDefault(Expression<Func<T, bool>> predicate);
