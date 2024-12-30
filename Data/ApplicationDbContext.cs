@@ -24,9 +24,9 @@ namespace Data
         {
 
             modelBuilder.Entity<Project>().HasData(
-                new Project { Id = 1, Name = "IsEmirleri" },
-                new Project { Id = 2, Name = "CrawlProject" },
-                new Project { Id = 3, Name = "NazmiGelenAgency" }
+                new Project { Id = 1, Title = "IsEmirleri" },
+                new Project { Id = 2, Title = "CrawlProject" },
+                new Project { Id = 3, Title = "NazmiGelenAgency" }
                 );
             modelBuilder.Entity<Skill>().HasData(
                 new Skill { Id = 1, Name = "C#" },
